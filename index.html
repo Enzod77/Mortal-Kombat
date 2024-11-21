@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--CSS-->
+    <link rel="stylesheet" href="diseño.css">
+    <!--Para dispositivos moviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mortal-Kombat/EnzoDutto</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+<!--Edición y estilo-->
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+      .grid-item {
+        background-color: transparent;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 50px;
+      }
+      body{
+        background-color: rgb(255, 188, 111);
+      }
+</style>
+</head>
+<body>
+
+<header>
+    <img id="imag" src="Imagenes/logo.MK" width="280px"; height="180px">
+</header>
+    
+
+<nav>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">INICIO</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">PERSONAJES</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <br>  
+        <section>
+
+          <article>
+              <div style="text-align: center;">
+          <p class="intro">Mortal Kombat es un <strong>videojuego de lucha</strong> creado por Ed Boon y John Tobias en 1992, conocido especialmente por sus personajes y su <strong>violencia grafica.</strong></p>
+          <p class="intro">Como resultado de su éxito, Mortal Kombat ha dado lugar a varias secuelas y se ha escindido en varios juegos de <strong>acción y aventura</strong>, ha tenido películas, series de televisión e historietas.</p>
+          </div>
+          </article>
+          <br>
+      
+      <!--COLLAPSE-->  
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Historia dentro del Juego</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Trama</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Abrir ambos</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              En una misteriosa isla, internada en los mares de China, y desconocida por el resto del mundo, los luchadores sobrenaturales luchan por el destino de la Tierra. Ese gran torneo es conocido como Mortal Kombat y ha sido por años una competición de honor y gloria. Luchadores de todo el mundo eran invitados a combatir.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              El primer juego de Mortal Kombat tiene lugar en Earthrealm (Tierra), donde siete guerreros diferentes con sus propias razones para ingresar al torneo con el premio siendo la libertad continua de su reino bajo la amenaza de una toma de control por parte de Outworld. Entre los guerreros establecidos estaban Liu Kang, Johnny Cage y Sonya Blade. Con la ayuda del dios del trueno Raiden, los guerreros de Earthrealm salieron victoriosos y Liu Kang se convirtió en el nuevo campeón de Mortal Kombat.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <!--CARRUCEL-->
+      <div class="carrucel">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imagenes/Primer MK.jpg" width=600px height=400px class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Primer Mortal Kombat</h5>
+              <p>Desarrollado y publicado por Midway en <strong>1992</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagenes/MK-9.jpg" width=600px height=400px class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mortal Kombat 9</h5>
+              <p>Desarrollado por NetherRealm Studios y publicado en <strong>2011</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagenes/mk1 reinicio.webp" width=600px height=400px class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mortal Kombat El reinicio</h5>
+              <p>Desarrollado por NetherRealm Studios y publicado en <strong>2023</strong></p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+      
+      <!--GRUPO DE BOTONES-->
+      <div class="btn-group">
+        <a href="https://mortalkombat.fandom.com/es/wiki/Video_Juegos" class="btn btn-primary active" aria-current="page">Juegos</a>
+        <a href="https://mortalkombat.fandom.com/es/wiki/Pel%C3%ADculas_y_Series" class="btn btn-primary">Peliculas</a>
+        <a href="https://mortalkombat.fandom.com/es/wiki/C%C3%B3mics" class="btn btn-primary">Historietas</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <br>
+      <!--Contenedores-->
+<div class="grid-container">
+
+  <!--TARJETAS-->
+
+  <div class="grid-item">
+  
+  <div class="card" style="width: 18rem;">
+      <img src="Imagenes/scorpion.jfif" height="280px" width="280" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Scorpion</h5>
+        <p class="card-text">Es un ninja espectro, el cual se define principalmente por su búsqueda de vengar la muerte de su familia y su clan. Su arma principal, además del <strong>fuego</strong>, es una <strong>lanza kunai</strong>, que usa para arponear a sus oponentes.</p>
+        <a href="https://es.wikipedia.org/wiki/Scorpion_(Mortal_Kombat)" class="btn btn-primary">Más información</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="grid-item">
+  <div class="card" style="width: 18rem;">
+    <img src="Imagenes/sub-zero.jpg" height="280px" width="280" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sub-Zero</h5>
+      <p class="card-text">Es un guerrero del clan Lin Kuei, el personaje se define principalmente por su capacidad para controlar el <strong>hielo</strong> en muchas formas. Busca vengar la sangre de su hermano, el cual fue asesinado por Scorpion en un combate</p>
+      <a href="https://es.wikipedia.org/wiki/Sub-Zero" class="btn btn-primary">Más información</a>
+    </div>
+  </div>
+  </div>
+  
+  <div class="grid-item">
+    <div class="card" style="width: 18rem;">
+      <img src="Imagenes/noob saibot.jpg" height="280px" width="280" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Noob Saibot</h5>
+        <p class="card-text">Fue el primer ninja conocido como Sub-Zero, sin embargo después de ser asesinado por Scorpion es resucitado obteniendo el seudonimo de Noob Saibot y utilizando <strong>poderes oscuros y de sombras.</strong>  </p>
+        <a href="https://mortalkombat.fandom.com/es/wiki/Noob_Saibot" class="btn btn-primary">Más información</a>
+      </div>
+    </div>
+    </div>
+  
+   <div class="grid-item">
+      <div class="card" style="width: 18rem;">
+        <img src="Imagenes/raiden.jpg" height="280px" width="280" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Raiden</h5>
+          <p class="card-text">Es el dios del trueno y protector designado de La Tierra, Raiden defiende el planeta de innumerables amenazas de otro mundo. Posee muchas capacidades sobrenaturales, como teletransportarse, el control de los <strong>rayos</strong> y el poder volar.</p>
+          <a href="https://es.wikipedia.org/wiki/Raiden_(Mortal_Kombat)" class="btn btn-primary">Más información</a>
+        </div>
+      </div>
+      </div>
+  
+     <div class="grid-item">
+        <div class="card" style="width: 18rem;">
+          <img src="Imagenes/MK9-LIU-KANG.jpg" height="280px" width="280" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Liu Kang</h5>
+            <p class="card-text">Monje Shaolin que ingresa al torneo Mortal Kombat para salvar a La Tierra. Después de su victoria en el torneo, se convierte campeón y principal defensor de La Tierra guiado por su mentor, el dios del trueno Raiden.  </p>
+            <a href="https://es.wikipedia.org/wiki/Liu_Kang" class="btn btn-primary">Más información</a>
+          </div>
+        </div>
+        </div>
+       
+        <div class="grid-item">
+          <div class="card" style="width: 18rem;">
+            <img src="Imagenes/kung lao.webp" height="280px" width="280" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kung Lao</h5>
+              <p class="card-text">Es el mejor amigo de Liu Kang, antiguo campeón del torneo Mortal Kombat, quien fue derrotado hace 500 años por Goro. Utiliza su famoso sombrero, que también funciona como arma.</p>
+              <a href="https://es.wikipedia.org/wiki/Kung_Lao" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+          </div>
+  
+          <div class="grid-item">
+            <div class="card" style="width: 18rem;">
+              <img src="Imagenes/johnny cage.jfif" height="280px" width="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Johnny Cage</h5>
+                <p class="card-text">Johnny Cage es un actor de Hollywood experto en artes marciales, pero toda la gente cree que los golpes de sus películas son un fraude. Harto de la opinión de los críticos, el actor decide entrar en el torneo de Mortal Kombat para demostrar lo contrario.</p>
+                <a href="https://es.wikipedia.org/wiki/Johnny_Cage" class="btn btn-primary">Más información</a>
+              </div>
+            </div>
+            </div>
+  
+            <div class="grid-item">
+              <div class="card" style="width: 18rem;">
+                <img src="Imagenes/sonia.jfif" height="280px" width="280" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sonia Blade</h5>
+                  <p class="card-text">Es la comandante de las Fuerzas Especiales de los Estados Unidos, su objetivo en la mayoría de los juegos es perseguir y capturar al criminal Kano. Mas tarde se casa con  Johnny Cage y tienen a su hija Cassie Cage</p>
+                  <a href="https://es.wikipedia.org/wiki/Sonya_Blade" class="btn btn-primary">Más información</a>
+                </div>
+              </div>
+              </div>
+  
+              <div class="grid-item">
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/Jax.jpg" height="280px" width="280" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jax</h5>
+                    <p class="card-text">Oficial al mando de la agente de las Fuerzas Especiales junto con Sonya Blade. Se distingue por sus brazos biónicos de metal y sus habilidades se basan en la fuerza de la parte superior del cuerpo. </p>
+                    <a href="https://es.wikipedia.org/wiki/Jax_Briggs" class="btn btn-primary">Más información</a>
+                  </div>
+                </div>
+                </div>
+  
+                <div class="grid-item">
+                  <div class="card" style="width: 18rem;">
+                    <img src="Imagenes/kitana.jfif" height="280px" width="280" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kitana</h5>
+                      <p class="card-text">Princesa e hija de los reyes Jerrod y Sindel. Viendose obligada sirve a Shao Kahn (su padrastro) como parte de su escuadrón de asesinas, en el que también están su mejor amiga y guardaespaldas, Jade y su hermana (clon), Mileena. También es el interés amoroso del héroe de Mortal Kombat, Liu Kang.</p>
+                      <a href="https://es.wikipedia.org/wiki/Kitana" class="btn btn-primary">Más información</a>
+                    </div>
+                  </div>
+                  </div>
+  
+                  <div class="grid-item">
+                    <div class="card" style="width: 18rem;">
+                      <img src="Imagenes/mileena.jfif" height="280px" width="280" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Mileena</h5>
+                        <p class="card-text">Mileena es un clon de Kitana (su rival) creado por Shang Tsung a petición de Shao Kahn, teniendo como única diferencia entre ellas una gran dentadura que sobresale de su boca sin labios.</p>
+                        <a href="https://es.wikipedia.org/wiki/Mileena" class="btn btn-primary">Más información</a>
+                      </div>
+                    </div>
+                    </div>
+  
+                    <div class="grid-item">
+                      <div class="card" style="width: 18rem;">
+                        <img src="Imagenes/jade.jfif" height="280px" width="280" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Jade</h5>
+                          <p class="card-text">Es una de las asesinas de élite al servicio del malvado emperador del Outworld, Shao Kahn, también es la mejor amiga, guardaespaldas y confidente de la princesa Kitana, así como su compañera patriota del reino de Edenia, que fue esclavizado por Shao. </p>
+                          <a href="https://es.wikipedia.org/wiki/Jade_(Mortal_Kombat)" class="btn btn-primary">Más información</a>
+                        </div>
+                      </div>
+                      </div>
+  
+                      <div class="grid-item">
+                        <div class="card" style="width: 18rem;">
+                          <img src="Imagenes/shang tsung.jpg" height="280px" width="280" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Shang Tsung</h5>
+                            <p class="card-text">Un hechicero poderoso, mortal y un bandido principal en la serie de Mortal Kombat. Es un brujo que tiene que consumir almas para sostener su salud y vida, uno de los villanos más temidos y peligrosos dentro del universo de Mortal Kombat.</p>
+                            <a href="https://es.wikipedia.org/wiki/Shang_Tsung" class="btn btn-primary">Más información</a>
+                          </div>
+                        </div>
+                        </div>
+  
+                        <div class="grid-item">
+                          <div class="card" style="width: 18rem;">
+                            <img src="Imagenes/sindel.webp" height="280px" width="280" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Sindel</h5>
+                              <p class="card-text">Reina y madre de Kitana. Ante la amenaza de perder su trono cuando Shao Kang conquistó su reino, Sindel traicionó a su marido y a su pueblo para mantener su posición privilegiada. Su habilidad es su chillido para aturdir a sus enemigos y proceder a vencerlos . </p>
+                              <a href="https://es.wikipedia.org/wiki/Sindel" class="btn btn-primary">Más información</a>
+                            </div>
+                          </div>
+                          </div>
+  
+                          <div class="grid-item">
+                            <div class="card" style="width: 18rem;">
+                              <img src="Imagenes/shao kahn.jpg" height="280px" width="280" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Shao Kahn</h5>
+                                <p class="card-text">Shao Kahn es el emperador del Mundo Exterior, conocido por su fuerza divina, su extrema brutalidad y su conocimiento de la magia negra, sirve como el principal antagonista en la mayoría de la serie de juegos.</p>
+                                <a href="https://es.wikipedia.org/wiki/Shao_Kahn" class="btn btn-primary">Más información</a>
+                              </div>
+                            </div>
+                            </div>
+  </div>
+    </div>
+</nav>
+
+<!--OFFCANVAS-->
+    <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel"><u>Bienvenido/a</u></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          En esta seccion hablaremos sobre <strong><mark>Mortal Kombat</mark></strong> uno de los videojuegos más conocidos que a lo largo del tiempo ha conquistado a miles de personas en todo el mundo.
+        <br>
+        <br>
+        <p>Consigue tu Mortal Kombat 2024</p>
+        <a href="https://www.xbox.com/es-AR/games/store/mortal-kombat-1/9n7271qn4sgb">Haz click aqui</a>
+       <br>
+        <img src="Imagenes/compra1.jpg" width=150px>
+        <img src="Imagenes/compra 2.jpg" width=200px>
+    </div>
+      </div>
+
+<br>
+<footer>
+  <p>Enzo Dutto 5°"C"</p>
+    <p>Programación Web</p>
+    <p>Profesora Jacqueline Lingua</p>
+</footer>
+</body>
+<html>
